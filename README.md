@@ -32,7 +32,7 @@
 
 <p align="center">
     The NTFS Permission <br/>
- <img src="https://imgur.com/XwtqDov.png" height="80%" width="80%" "/>
+ <img src="https://imgur.com/XwtqDov.png" height="10%" width="30%" "/>
 <p align="center"> In NTFS one of the obvious main differences with that NTFS has more permissions. In NFTS you can apply permissions to the files and  
                    folder level. Permissions can be also applied to sub-folders here.</br>
    
