@@ -124,8 +124,30 @@
 <p align="center"> After we have create the Mapped Drives in GPO right click on it then go to edit. This should open the Group Policy Management Editor 
                    Box. And the option will be either computer conguration or user configuration. Since the drives are based on what the user need you 
                    should select user configuration. And then we should also within User configuration we should select preferences. Expand Preferences and 
-                   look for drive maps. </br>     
+                   Windows Settings you will see that there is a Drive Maps. Right click Drive Map and then go to New, then select Mapped Drives </br>   
 
+</br>
+                   
+<p align="center">
+    Drive Maps configuration</br>
+ <img src="https://imgur.com/RmG7ZTY.png" height="80%" width="80%" "/>
+<p align="center"> After you have selected Mapped Drives a new drives properties box should be opened. There is a section that says location. Put in the path to the server and the folder like we did with the previous method ie; \\server name\folder\. Then label how you may want the folder to show up later. 
+ Finally, chose the drive letter. Apply and Ok. Now that we have created the GPO we must link the GPO for it to apply to our users. So the next thing would be to drag and drop into the Users folder because it will be the Users who will be using this Mapped Drive GPO. And if you expand the User FOlder you should be able to see Drive Mapping with the User Folder. So to text and see whether that GPO work lets go to the Client Machine.</br> 
+
+</br>
+<p align="center">
+    GpUpdate in Client Machine</br>
+ <img src="https://imgur.com/JlXscjK.png" height="80%" width="80%" "/>
+<p align="center"> In the CLient Machine if you want to GPO policy to apply right away go to the command prompt and type in "gpupdate /force" and enter.  
+                    Once that is done reboot the computer to see if our changes have applied and we could see the shared folder.</br> 
+
+ </br>
+
+   <p align="center">
+    After reboot </br>
+ <img src="https://imgur.com/NT2VHf3.png" height="80%" width="80%" "/>
+<p align="center"> We should now have access to the shared folder. This shold stay there even after you have rebooted the computer. So whenever the user 
+                   signs in its automatically going to be mapped to their account.</br>                  
 
   
 
